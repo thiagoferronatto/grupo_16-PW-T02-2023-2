@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --quizzy-purple: #6B72FA;
+  --quizzy-yellow: #F9FA5F;
+  --quizzy-darkgrey: #202020;
+}
+
+* {
+  font-family: 'Inter', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: var(--quizzy-darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  padding-left: 2pc;
+  height: 10pc;
+  background-color: var(--quizzy-purple);
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+header h1 {
+  user-select: none;
+  color: var(--quizzy-yellow);
+  font-weight: 900;
+  font-size: 80pt;
+}
+
+main {
+  position: relative;
+}
+
+main h2 {
+  position: absolute;
+  top: 2.5pc;
+  left: 10pc;
+  font-weight: 800;
+  font-size: 100pt;
+  width: 50%;
+}
+
+main p {
+  position: absolute;
+  top: 25pc;
+  right: 30pc;
+  width: 25%;
+  font-size: 15pt;
+  text-align: justify;
+}
+
+main section {
+  position: absolute;
+  margin-top: 1pc;
+  right: 36pc;
+  top: 30pc;
+}
+
+main button {
+  margin-left: .5pc;
+  padding: .75pc;
+  background-color: var(--quizzy-purple);
+  border-radius: .5pc;
+  border: none;
+  font-weight: 600;
+  font-size: 12pt;
+  color: white;
+}
+
+main button:hover {
+  background-color: var(--quizzy-yellow);
+  color: var(--quizzy-darkgrey)
+}
+
+footer {
+  bottom: -22.5pc;
+  position: relative;
+}
+
+footer img {
+  z-index: -1;
+  pointer-events: none;
+  position: absolute;
+  top: 2pc;
+  left: -5pc;
+  width: 125%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding-left: 1pc;
+    height: 7pc;
+    background-color: var(--quizzy-purple);
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+  }
+
+  header h1 {
+    user-select: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--quizzy-yellow);
+    font-weight: 900;
+    font-size: 60pt;
+  }
+
+  main h2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2pc;
+    font-weight: 800;
+    font-size: 25pt;
+    width: 60%;
+  }
+
+  main p {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 2pc;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12pt;
+    text-align: justify;
+  }
+
+  main section {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 2pc;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  main button {
+    margin-left: .5pc;
+    padding: .75pc;
+  }
+
+  footer {
+    visibility: hidden;
+    bottom: -22.5pc;
+    position: relative;
+  }
+}

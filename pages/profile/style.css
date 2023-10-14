@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --quizzy-purple: #6B72FA;
+  --quizzy-yellow: #F9FA5F;
+  --quizzy-darkgrey: #202020;
+  --quizzy-red: #E74444;
+}
+
+* {
+  font-family: 'Inter', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: var(--quizzy-darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+header {
+  padding-left: 2pc;
+  height: 10pc;
+  background-color: var(--quizzy-purple);
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+header h1 {
+  user-select: none;
+  color: var(--quizzy-yellow);
+  font-weight: 900;
+  font-size: 80pt;
+}
+
+main {
+  position: relative;
+
+  background-color: white;
+  width: 50pc;
+  height: 40pc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5pc;
+  padding: 1pc;
+
+  border-radius: 1pc;
+  box-shadow: 0 0 1pc #aaa;
+}
+
+main #back-arrow {
+  position: absolute;
+  top: 2.5pc;
+  left: 2.5pc;
+  width: 1.5pc;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 1pc;
+  margin-bottom: 5pc;
+  font-size: 30pt;
+}
+
+main div {
+  position: relative;
+  width: 80%;
+  margin-bottom: 4pc;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div img {
+  position: absolute;
+  width: 3pc;
+}
+
+main div h3,
+main div p {
+  margin-left: 4pc;
+}
+
+main div a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline;
+  color: var(--quizzy-purple);
+}
+
+main div#btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+main div button {
+  border-radius: .5pc;
+  padding: .75pc;
+  border: none;
+  font-weight: 600;
+  font-size: 12pt;
+  color: white;
+  text-align: center;
+  width: 40%;
+  margin-left: 1pc;
+  margin-right: 1pc;
+}
+
+main div button#delete-account {
+  background-color: var(--quizzy-red);
+  margin-right: .5pc;
+}
+
+main div button#logout {
+  background-color: var(--quizzy-purple);
+  margin-left: .5pc;
+}
+
+footer {
+  bottom: 10pc;
+  position: relative;
+}
+
+footer img {
+  z-index: -1;
+  pointer-events: none;
+  position: absolute;
+  top: 2pc;
+  left: -5pc;
+  width: 125%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+
+  header {
+    padding-left: 1pc;
+    height: 7pc;
+    background-color: var(--quizzy-purple);
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+  }
+
+  header h1 {
+    user-select: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--quizzy-yellow);
+    font-weight: 900;
+    font-size: 60pt;
+  }
+
+  main {
+    width: 80%;
+    box-shadow: none;
+  }
+
+  main div {
+    width: 100%;
+  }
+
+  main div button#delete-account {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+  }
+
+  main div button#logout {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+  }
+
+  footer {
+    visibility: hidden;
+  }
+}

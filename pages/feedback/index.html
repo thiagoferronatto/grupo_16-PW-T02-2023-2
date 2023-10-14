@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Q?</h1>
+      <a href="../profile/index.html">Conta</a>
+    </header>
+    <main>
+      <h2>Conhecimentos Gerais</h2>
+      <button id="return-to-quizzes" onclick="back()">Voltar aos
+        quizzes</button>
+      <hr />
+      <div id="questions-wrapper">
+        <div class="question">
+          <h3 class="question-title">Questão 1</h3>
+          <p class="question-text">Qual é a capital do Brasil?</p>
+          <fieldset class="q1-answer" name="q1-answer">
+            <input type="radio" id="q1-answer-a" name="q1-answer" />
+            <label for="q1-answer-a">Alternativa A: São Paulo</label><br />
+            <input type="radio" id="q1-answer-b" name="q1-answer" />
+            <label for="q1-answer-b">Alternativa B: Rio de Janeiro</label><br />
+            <input type=radio id="q1-answer-c" name="q1-answer" data-correct />
+            <label for="q1-answer-c">Alternativa C: Brasília</label><br />
+            <input type=radio id="q1-answer-d" name="q1-answer" />
+            <label for="q1-answer-d">Alternativa D: Belo Horizonte</label><br />
+            <input type=radio id="q1-answer-e" name="q1-answer" />
+            <label for="q1-answer-e">Alternativa E: Salvador</label>
+          </fieldset>
+          <img src="../../media/correct-answer.svg" />
+        </div>
+        <div class="question">
+          <h3 class="question-title">Questão 2</h3>
+          <p class="question-text">Quem escreveu "Dom Casmurro"?</p>
+          <fieldset class="q2-answer" name="q2-answer">
+            <input type="radio" id="q2-answer-a" name="q2-answer" />
+            <label for="q2-answer-a">Alternativa A: Machado de
+              Assis</label><br />
+            <input type=radio id="q2-answer-b" name="q2-answer" />
+            <label for="q2-answer-b">Alternativa B: Jorge Amado</label><br />
+            <input type=radio id="q2-answer-c" name="q2-answer" />
+            <label for="q2-answer-c">Alternativa C: Graciliano
+              Ramos</label><br />
+            <input type=radio id="q2-answer-d" name="q2-answer" />
+            <label for="q2-answer-d">Alternativa D: Clarice
+              Lispector</label><br />
+            <input type=radio id="q2-answer-e" name="q2-answer" />
+            <label for="q2-answer-e">Alternativa E: Érico Veríssimo</label>
+          </fieldset>
+        </div>
+        <div class="question">
+          <h3 class="question-title">Questão 3</h3>
+          <p class="question-text">Qual é o maior país da América do Sul?</p>
+          <fieldset class="q3-answer" name="q3-answer">
+            <input type="radio" id="q3-answer-a" name="q3-answer" />
+            <label for="q3-answer-a">Alternativa A: Argentina</label><br />
+            <input type=radio id="q3-answer-b" name="q3-answer" />
+            <label for="q3-answer-b">Alternativa B: Brasil</label><br />
+            <input type=radio id="q3-answer-c" name="q3-answer" />
+            <label for="q3-answer-c">Alternativa C: Colômbia</label><br />
+            <input type=radio id="q3-answer-d" name="q3-answer" />
+            <label for="q3-answer-d">Alternativa D: Peru</label><br />
+            <input type=radio id="q3-answer-e" name="q3-answer" />
+            <label for="q3-answer-e">Alternativa E: Chile</label>
+          </fieldset>
+          <img src="../../media/correct-answer.svg" />
+        </div>
+        <div class="question">
+          <h3 class="question-title">Questão 4</h3>
+          <p class="question-text">Quantos continentes existem no mundo?</p>
+          <fieldset class="q4-answer" name="q4-answer">
+            <input type="radio" id="q4-answer-a" name="q4-answer" />
+            <label for="q4-answer-a">Alternativa A: 4</label><br />
+            <input type=radio id="q4-answer-b" name="q4-answer" />
+            <label for="q4-answer-b">Alternativa B: 6</label><br />
+            <input type=radio id="q4-answer-c" name="q4-answer" />
+            <label for="q4-answer-c">Alternativa C: 7</label><br />
+            <input type=radio id="q4-answer-d" name="q4-answer" />
+            <label for="q4-answer-d">Alternativa D: 5</label><br />
+            <input type=radio id="q4-answer-e" name="q4-answer" />
+            <label for="q4-answer-e">Alternativa E: 8</label>
+          </fieldset>
+          <img src="../../media/correct-answer.svg" />
+        </div>
+        <div class="question">
+          <h3 class="question-title">Questão 5</h3>
+          <p class="question-text">Quem foi o primeiro presidente do Brasil?</p>
+          <fieldset class="q5-answer" name="q5-answer">
+            <input type="radio" id="q5-answer-a" name="q5-answer" />
+            <label for="q5-answer-a">Alternativa A: Getúlio Vargas</label><br />
+            <input type=radio id="q5-answer-b" name="q5-answer" />
+            <label for="q5-answer-b">Alternativa B: Juscelino
+              Kubitschek</label><br />
+            <input type=radio id="q5-answer-c" name="q5-answer" />
+            <label for="q5-answer-c">Alternativa C: Marechal Deodoro da
+              Fonseca</label><br />
+            <input type=radio id="q5-answer-d" name="q5-answer" />
+            <label for="q5-answer-d">Alternativa D: Fernando
+              Collor</label><br />
+            <input type=radio id="q5-answer-e" name="q5-answer" />
+            <label for="q5-answer-e">Alternativa E: Tancredo Neves</label>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --quizzy-purple: #6B72FA;
+  --quizzy-yellow: #F9FA5F;
+  --quizzy-darkgrey: #202020;
+  --quizzy-red: #E74444;
+}
+
+* {
+  font-family: 'Inter', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: var(--quizzy-darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: relative;
+  padding-left: 1pc;
+  height: 5pc;
+  background-color: var(--quizzy-purple);
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+header h1 {
+  user-select: none;
+  color: var(--quizzy-yellow);
+  font-weight: 900;
+  font-size: 40pt;
+  margin-left: 25pc;
+}
+
+header a {
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  right: 30pc;
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+main {
+  background-color: white;
+  width: 65pc;
+  height: 45pc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5pc;
+  padding-top: 1pc;
+
+  border-radius: 1pc;
+  box-shadow: 0 0 1pc #aaa;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 1pc;
+}
+
+main hr {
+  margin-top: 2pc;
+  border: 1pt solid #d0d0d0;
+}
+
+main div#quiz-data-wrapper {
+  position: relative;
+}
+
+main div#quiz-data-wrapper div#quiz-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67.5%;
+  height: 38pc;
+  overflow: scroll;
+  margin-right: 1pc;
+  padding-right: 1pc;
+  padding-top: 2pc;
+  border-right: 2pt solid #d0d0d0;
+  padding-left: 1pc;
+}
+
+main div#quiz-data-wrapper div#quiz-list div.quiz {
+  border: 2pt solid var(--quizzy-purple);
+  border-radius: 1pc;
+  padding: 1pc;
+  margin-bottom: 1pc;
+}
+
+.active-quiz {
+  background-color: var(--quizzy-yellow);
+}
+
+main div#quiz-data-wrapper div#active-quiz-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26%;
+  height: 100%;
+  margin-left: 1pc;
+  padding-top: 1pc;
+  padding-left: 1pc;
+  padding-right: 1pc;
+}
+
+main div#quiz-data-wrapper div#active-quiz-info p {
+  margin-bottom: .5pc;
+}
+
+main div#quiz-data-wrapper div#active-quiz-info button {
+  padding: .75pc;
+  background-color: var(--quizzy-purple);
+  border: none;
+  font-weight: 600;
+  font-size: 12pt;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: .5pc;
+  margin-top: 1pc;
+}
+
+main div#quiz-data-wrapper div#active-quiz-info button:hover {
+  background-color: var(--quizzy-yellow);
+  color: var(--quizzy-darkgrey);
+}
+
+/*! Não tem media queries pra esse aqui por falta de tempo. */

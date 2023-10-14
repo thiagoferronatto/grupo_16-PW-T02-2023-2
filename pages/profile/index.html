@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Q?</h1>
+    </header>
+    <main>
+      <img id="back-arrow" src="../../media/back-arrow.svg"
+        onclick="window.history.go(-1); return false;" />
+      <h2>Seu perfil</h2>
+      <div>
+        <img src="../../media/user-icon.svg" />
+        <h3>Nome de usuário:</h3>
+        <p>nomeDeUsuario</p>
+        <a href="#">Alterar</a>
+      </div>
+      <div>
+        <img src="../../media/email-icon.svg" />
+        <h3>E-mail:</h3>
+        <p>addr@email.com</p>
+        <a href="#">Alterar</a>
+      </div>
+      <div>
+        <img src="../../media/password-icon.svg" />
+        <h3>Senha:</h3>
+        <p>***********</p>
+        <a href="#">Alterar</a>
+      </div>
+      <div id="btn-wrapper">
+        <button id="delete-account">Excluir conta</button>
+        <button id="logout">Fazer logout</button>
+      </div>
+    </main>
+    <footer>
+      <img src="../../media/bottom-art-short.svg" />
+    </footer>
+  </body>
+
+</html>

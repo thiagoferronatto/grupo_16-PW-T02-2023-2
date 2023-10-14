@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --quizzy-purple: #6B72FA;
+  --quizzy-yellow: #F9FA5F;
+  --quizzy-darkgrey: #202020;
+  --quizzy-red: #E74444;
+  --quizzy-green: #45D65C;
+}
+
+* {
+  font-family: 'Inter', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: var(--quizzy-darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: relative;
+  padding-left: 1pc;
+  height: 5pc;
+  background-color: var(--quizzy-purple);
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+header h1 {
+  user-select: none;
+  color: var(--quizzy-yellow);
+  font-weight: 900;
+  font-size: 40pt;
+  margin-left: 25pc;
+}
+
+header a {
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  right: 30pc;
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+main {
+  position: relative;
+
+  background-color: white;
+  width: 65pc;
+  height: 45pc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5pc;
+  padding-top: 1pc;
+
+  border-radius: 1pc;
+  box-shadow: 0 0 1pc #aaa;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 1pc;
+}
+
+main button#return-to-quizzes {
+  position: absolute;
+  top: 1.5pc;
+  right: 1.5pc;
+  padding: .75pc;
+  background-color: var(--quizzy-purple);
+  border: none;
+  font-weight: 600;
+  font-size: 12pt;
+  color: white;
+  text-align: center;
+  border-radius: .5pc;
+}
+
+main button#return-to-quizzes:hover {
+  background-color: var(--quizzy-yellow);
+  color: var(--quizzy-darkgrey);
+}
+
+main hr {
+  margin-top: 2pc;
+  border: 1pt solid #d0d0d0;
+}
+
+main div#questions-wrapper {
+  overflow: scroll;
+  height: 38pc;
+  padding: 1pc;
+}
+
+main div#questions-wrapper div.question {
+  position: relative;
+  border-radius: 1pc;
+  border: 2pt solid var(--quizzy-purple);
+  padding: 1pc;
+  margin-bottom: 1pc;
+}
+
+main div#questions-wrapper div.question img {
+  position: absolute;
+  top: 1pc;
+  right: 1pc;
+  width: 5pc;
+  transform: rotate(-30deg);
+}
+
+main div#questions-wrapper div.question h3 {
+  margin-bottom: 1pc;
+}
+
+main div#questions-wrapper div.question p {
+  margin-bottom: 1pc;
+}
+
+main div#questions-wrapper div.question fieldset {
+  border: none;
+  margin-left: 1pc;
+}
+
+main div#questions-wrapper div.question fieldset input {
+  margin-bottom: .5pc;
+}

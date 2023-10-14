@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --quizzy-purple: #6B72FA;
+  --quizzy-yellow: #F9FA5F;
+  --quizzy-darkgrey: #202020;
+}
+
+* {
+  font-family: 'Inter', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: var(--quizzy-darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --quizzy-purple: #6B72FA;
+  --quizzy-yellow: #F9FA5F;
+  --quizzy-darkgrey: #202020;
+}
+
+* {
+  font-family: 'Inter', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  color: var(--quizzy-darkgrey);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  padding-left: 2pc;
+  height: 10pc;
+  background-color: var(--quizzy-purple);
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+header h1 {
+  user-select: none;
+  color: var(--quizzy-yellow);
+  font-weight: 900;
+  font-size: 80pt;
+}
+
+main {
+  padding: 0;
+  position: relative;
+  margin-top: 6pc;
+  width: 20pc;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 5pc;
+}
+
+main input {
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .75pc;
+  margin-bottom: 1pc;
+  border-radius: .5pc;
+  border: 1pt solid var(--quizzy-darkgrey);
+  width: 100%;
+}
+
+main input:focus {
+  background-color: var(--quizzy-yellow);
+  border: 1pt solid var(--quizzy-purple);
+  outline: 2pt solid var(--quizzy-purple);
+}
+
+main #submit {
+  padding: .75pc;
+  background-color: var(--quizzy-purple);
+  border: none;
+  font-weight: 600;
+  font-size: 12pt;
+  color: white;
+  text-align: center;
+}
+
+main #submit:hover {
+  background-color: var(--quizzy-yellow);
+  color: var(--quizzy-darkgrey);
+}
+
+main a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer {
+  bottom: -5pc;
+  position: relative;
+}
+
+footer img {
+  z-index: -1;
+  pointer-events: none;
+  position: absolute;
+  top: 2pc;
+  left: -5pc;
+  width: 125%;
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+    padding-left: 1pc;
+    height: 7pc;
+    background-color: var(--quizzy-purple);
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+  }
+
+  header h1 {
+    user-select: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--quizzy-yellow);
+    font-weight: 900;
+    font-size: 60pt;
+  }
+
+  footer {
+    visibility: hidden;
+    bottom: -22.5pc;
+    position: relative;
+  }
+}
